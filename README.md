@@ -1,2 +1,2 @@
-# pagina-bikraft-origamid
+# Página Bikraft Origamid
 Uma página inicial do projeto Bikraft da Origamid realizado através dos estudos de HTML e CSS.
