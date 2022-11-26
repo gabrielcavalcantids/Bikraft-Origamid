@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1.25rem;
+  line-height: 1.3;
+}
+h2 {
+  font-size: 4rem;
+  color: #c6c6c6;
+}
+/* Fim CSS GLOBAL */
+body {
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+  margin-top: 3.75rem;
+  background-color: #f7f7f7;
+}
+
+header {
+  display: grid;
+  justify-items: center;
+  gap: 3.75rem;
+  background-color: #f7f7f7;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  text-transform: uppercase;
+}
+
+.menu ul a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.938rem 1.875rem;
+  color: #000;
+  display: block;
+  border: transparent 0.125rem solid;
+  border-radius: 0.25rem;
+  transition: 0.3s ease;
+}
+.menu ul a:hover {
+  transition: 0.3s ease;
+  border-color: #e21;
+}
+.conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1000px;
+}
+.introducao {
+  display: grid;
+  justify-items: end;
+  background-color: #fff;
+  align-content: center;
+  gap: 1.25rem;
+  padding: 2.5rem;
+  position: relative;
+  text-align: right;
+}
+
+.introducao h1::before {
+  content: "";
+  width: 3.75rem;
+  height: 0.25rem;
+  background: #e21;
+  position: absolute;
+  top: 1.875rem;
+  right: -1.875rem;
+}
+.botao {
+  text-transform: uppercase;
+  background-color: #e21;
+  color: #fff;
+  padding: 0.938rem 1.875rem;
+  border-radius: 0.25rem;
+  transition: 0.3s ease;
+}
+.botao:hover {
+  transition: 0.3s ease;
+  background: #900;
+}
+.subtitulo {
+  text-align: right;
+  align-self: center;
+  text-transform: uppercase;
+  padding: 2.5rem;
+  background: url(/img/onda.svg);
+}
+.vantagens {
+  background: #fff;
+  padding: 2.5rem;
+}
+.vantagens-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding: 1.25rem;
+  gap: 0.625rem 1.25rem;
+  transition: 0.3s ease-in-out;
+}
+.vantagens-item p {
+  grid-column: 2;
+}
+.vantagens-item:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.vantagens-item:hover {
+  transition: 0.3s ease;
+  border-left: 0.25rem solid #e21;
+}
+
+footer {
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 2.5rem;
+}
+
+@media (max-width: 1000px) {
+  .introducao {
+    text-align: left;
+    justify-items: start;
+  }
+  .conteudo {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+  .introducao h1::before {
+    display: none;
+  }
+  .subtitulo {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .menu ul a {
+    padding: 0.625rem 1.25rem;
+  }
+  .introducao h1 {
+    font-size: 1.8rem;
+  }
+  .introducao p {
+    font-size: 1.1rem;
+  }
+  .botao {
+    padding: 0.625rem 1.25rem;
+  }
+
+  .vantagens-item p {
+    font-size: 1.1rem;
+  }
+}
