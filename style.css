@@ -185,6 +185,17 @@ footer {
   }
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg-1: #f7f7f7;
+    --bg-2: #ffffff;
+    --text: #000000;
+    --text-2: #c6c6c6;
+    --subtitle: rgba(0, 0, 0, 0.2);
+    --onda: url("./img/onda-clara.svg");
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-1: #111111;
